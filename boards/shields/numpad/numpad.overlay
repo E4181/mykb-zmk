@@ -122,19 +122,16 @@
 	pinctrl-names = "default", "sleep";
     
 	oled: ssd1306@3c {
-        width = <128>;
-		height = <32>;
-        compatible = "solomon,ssd1306fb";
-        segment-offset = <0>;
-        multiplex-ratio = <31>; 
-        com-sequential; //1.30注销本行
-        label = "DISPLAY";
+		compatible = "solomon,ssd1306fb";
 		reg = <0x3c>;
+		label = "DISPLAY";
+		width = <128>;
+		height = <32>;
+		segment-offset = <0>;
 		page-offset = <0>;
 		display-offset = <0>;
-		segment-remap;
-		com-invdir;
-        inversion-on;   // 翻转颜色
+		multiplex-ratio = <31>;
+		com-sequential;
 		prechargep = <0x22>;
 	};
 };
