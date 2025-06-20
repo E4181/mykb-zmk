@@ -3,6 +3,9 @@ if SHIELD_NUMPAD
 config ZMK_KEYBOARD_NAME
     default "numpad"
 
+config ZMK_POINTING
+    default y
+
 config SPI
     default y
 
