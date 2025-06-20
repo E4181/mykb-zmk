@@ -3,6 +3,9 @@ if SHIELD_NUMPAD
 config ZMK_KEYBOARD_NAME
     default "numpad"
 
+config SPI
+    default y
+
 if ZMK_DISPLAY
 
 config I2C
