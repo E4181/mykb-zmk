@@ -111,7 +111,7 @@
         compatible = "solomon,ssd1306fb";
         segment-offset = <0>;
         multiplex-ratio = <31>; 
-        com-sequential; //1.30注销本行
+        com-sequential; //1.30
         label = "DISPLAY";
 		reg = <0x3c>;
 		page-offset = <0>;
