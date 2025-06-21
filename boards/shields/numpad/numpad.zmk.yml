@@ -4,9 +4,9 @@ name: numpad
 type: shield
 url: 
 requires: [nrfmicro_13_52840]
-# exposes: [i2c_oled]
+exposes: [i2c_oled]
 features:
   - keys
   - underglow
   - studio
-  - pointer
+  - display
