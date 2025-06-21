@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
   #  - name: mctechnology17
   #   url-base: https://github.com/mctechnology17
-    - name: zmk-nice-oled-zz
-      url-base: https://github.com/zzuse/zmk-nice-oled-zz
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,6 +15,7 @@ manifest:
    #   remote: mctechnology17
    #   revision: main
     - name: zmk-nice-oled-zz
+      url: https://github.com/zzuse/zmk-nice-oled-zz
       revision: main
       
   self:
