@@ -25,7 +25,7 @@
 
         diode-direction = "col2row";
         row-gpios
-            = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -167,6 +167,11 @@
 };
 
 //pmw3610
+//other spi2 pin
+//SDIO (moso/miso) = P0.22 
+//SCLK (sck)       = P0.24 
+//nCS (gpios)      = P1.00
+//Mot (irq)        = P0.11
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
