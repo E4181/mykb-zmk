@@ -114,33 +114,6 @@
     };
 };
 
-//oled
-&i2c0 {
-	//status = "okay";
-	//compatible = "nordic,nrf-twi";
-	//pinctrl-0 = <&i2c0_default>;
-	//pinctrl-1 = <&i2c0_sleep>;
-	//pinctrl-names = "default", "sleep";
-    
-	//oled: ssd1306@3c {
-        //width = <128>;
-		//height = <32>;
-        //compatible = "solomon,ssd1306fb";
-        //segment-offset = <0>;
-        //multiplex-ratio = <31>; 
-        //com-sequential; //1.30
-        //label = "DISPLAY";
-		//reg = <0x3c>;
-		//page-offset = <0>;
-		//display-offset = <0>;
-		//segment-remap;
-		//com-invdir;
-        //inversion-on;   // 翻转颜色
-		//prechargep = <0x22>;
-	//};
-//};
-
-
 //ws2812
 &spi3 {
     compatible = "nordic,nrf-spim";
@@ -204,3 +177,29 @@
     device = <&trackball>;
   };
 };
+
+//oled
+&i2c0 {
+	//status = "okay";
+	//compatible = "nordic,nrf-twi";
+	//pinctrl-0 = <&i2c0_default>;
+	//pinctrl-1 = <&i2c0_sleep>;
+	//pinctrl-names = "default", "sleep";
+    
+	//oled: ssd1306@3c {
+        //width = <128>;
+		//height = <32>;
+        //compatible = "solomon,ssd1306fb";
+        //segment-offset = <0>;
+        //multiplex-ratio = <31>; 
+        //com-sequential; //1.30
+        //label = "DISPLAY";
+		//reg = <0x3c>;
+		//page-offset = <0>;
+		//display-offset = <0>;
+		//segment-remap;
+		//com-invdir;
+        //inversion-on;   // 翻转颜色
+		//prechargep = <0x22>;
+	//};
+//};
