@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
-    - name: zmkfirmware
-      url-base: https://github.com/petejohanson
     - name: inorichi
       url-base: https://github.com/inorichi
   projects:
