@@ -32,11 +32,11 @@
     tri_layer {
         display-name = "tri";
          bindings = <
-            &trans  &trans     &trans  &bootloader 
+            &trans      &trans     &trans  &bootloader 
             &trans      &trans     &trans  &rgb_ug RGB_EFF
             &trans      &trans     &trans
-            &trans      &trans     &trans  &rgb_ug RGB_TOG
-            &trans         &trans
+            &trans      &trans     &trans  &trans
+            &trans                 &trans
             >;
         };
     };
