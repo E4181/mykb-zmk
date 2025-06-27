@@ -4,8 +4,10 @@ on:
   workflow_dispatch:  # can be triggered manually
   push:               # automatically run on changes to following paths
     paths:
+      - ".github/workflows/draw-keymaps.yml"
       - "config/*.keymap"
       - "config/*.dtsi"
+      - "boards/*/*/*.dtsi"
       - "keymap_drawer.config.yaml"
       # - 'boards/*/*/*.keymap'
 
@@ -20,4 +22,4 @@ jobs:
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
       parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
-      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
+      amend_commit: true
