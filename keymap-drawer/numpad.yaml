@@ -35,5 +35,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RGB TOG
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
