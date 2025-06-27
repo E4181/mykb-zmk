@@ -20,7 +20,7 @@ layers:
   - '&studio_unlock'
   - {type: held}
   tri:
-  - BT CLR
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
