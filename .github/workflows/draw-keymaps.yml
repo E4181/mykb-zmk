@@ -9,7 +9,6 @@ on:
       - "config/*.dtsi"
       - "boards/*/*/*.dtsi"
       - "keymap_drawer.config.yaml"
-      # - 'boards/*/*/*.keymap'
 
 jobs:
   draw:
