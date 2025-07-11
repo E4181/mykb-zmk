@@ -124,10 +124,10 @@
     
 	oled: ssd1306@3c {
         width = <128>;
-		height = <32>;
+		height = <64>;
         compatible = "solomon,ssd1306fb";
         segment-offset = <0>;
-        multiplex-ratio = <31>; 
+        multiplex-ratio = <63>; 
         com-sequential; //1.30
         label = "DISPLAY";
 		reg = <0x3c>;
