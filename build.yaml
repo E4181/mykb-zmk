@@ -4,6 +4,6 @@
 
 include:
    - board: nrfmicro_13
-     shield: numpad oled_adapter_pro_micro_128x128
+     shield: numpad oled_adapter_pro_micro_128x64
 
      
