@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/mctechnology17
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,7 +24,9 @@ manifest:
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
-
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: main
       
   self:
     path: config
