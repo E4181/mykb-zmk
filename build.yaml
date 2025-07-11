@@ -1,9 +1,5 @@
-#include:
-#   - board: nrfmicro_13
-#     shield: numpad nice_oled
-
 include:
    - board: nrfmicro_13
-     shield: numpad dongle_display
+     shield: numpad nice_oled
 
      
